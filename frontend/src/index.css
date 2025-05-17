@@ -1,0 +1,280 @@
+/* Base reset styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d1117; /* Pitch-dark background */
+  color: #ffffff; /* White text */
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #161b22; /* Slightly lighter dark background */
+  border-bottom: 1px solid #30363d;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #a855f7; /* Purple on hover */
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #a855f7; /* Purple logo */
+}
+
+header .buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+header .buttons a {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .buttons .login {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #a855f7;
+}
+
+header .buttons .login:hover {
+  background-color: #a855f7;
+  color: #ffffff;
+}
+
+header .buttons .signup {
+  background-color: #a855f7;
+  color: #ffffff;
+}
+
+header .buttons .signup:hover {
+  background-color: #9333ea; /* Darker purple */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: #0d1117;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: #a855f7; /* Purple heading */
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #9ca3af; /* Subtle gray text */
+  margin-bottom: 2.5rem;
+}
+
+.hero .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero .buttons a {
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero .buttons .primary {
+  background-color: #a855f7;
+  color: #ffffff;
+}
+
+.hero .buttons .primary:hover {
+  background-color: #9333ea;
+  transform: scale(1.05);
+}
+
+.hero .buttons .secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #a855f7;
+}
+
+.hero .buttons .secondary:hover {
+  background-color: #a855f7;
+  color: #ffffff;
+}
+
+/* Features Section */
+.features {
+  padding: 4rem 2rem;
+  background-color: #161b22;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.features .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.features .card {
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.features .card h3 {
+  font-size: 1.5rem;
+  color: #a855f7;
+  margin-bottom: 1rem;
+}
+
+.features .card p {
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #a855f7; /* Purple font for headings */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+/* Links */
+a {
+  color: #a855f7; /* Purple links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #d8b4fe; /* Lighter purple on hover */
+}
+
+/* Buttons */
+button {
+  background-color: #a855f7; /* Purple button background */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #9333ea; /* Darker purple on hover */
+  transform: scale(1.05);
+}
+
+/* Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Cards */
+.card {
+  background-color: #161b22; /* Slightly lighter dark background */
+  border: 1px solid #30363d; /* Subtle border */
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Forms */
+input, textarea, select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  background-color: #0d1117;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #a855f7;
+  box-shadow: 0 0 5px #a855f7;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #161b22;
+  color: #9ca3af; /* Subtle gray text */
+  font-size: 0.875rem;
+}
+
+footer a {
+  color: #a855f7;
+}
+
+footer a:hover {
+  color: #d8b4fe;
+}
