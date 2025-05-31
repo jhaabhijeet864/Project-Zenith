@@ -4,7 +4,6 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
-
 const firebaseConfig = {
   apiKey: "AIzaSyD-NPhYkkRC4R9YznryruY9pI3klr7Su4Y",
   authDomain: "project-zenith-001.firebaseapp.com",

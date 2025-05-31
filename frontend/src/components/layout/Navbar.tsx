@@ -4,10 +4,15 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import Button from '../ui/Button';
 
-const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const { currentUser, signOut } = useAuth();
+interface AuthContextType {
+  currentUser: any; // Replace with your actual user type
+  signOut: () => Promise<void>;
+}
+
+const Navbar: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  const { currentUser, signOut } = useAuth() as AuthContextType;
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -19,7 +24,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleSignOut = async () => {
+  const handleSignOut = async (): Promise<void> => {
     try {
       await signOut();
       navigate('/');

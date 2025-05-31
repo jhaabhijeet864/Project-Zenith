@@ -21,6 +21,8 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.6",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.9.1",

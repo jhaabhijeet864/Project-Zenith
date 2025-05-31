@@ -1,4 +1,8 @@
-/* Base reset styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Override and custom styles below Tailwind imports */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -6,21 +10,26 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #0d1117; /* Pitch-dark background */
-  color: #ffffff; /* White text */
+  font-family: 'Inter', sans-serif; /* Match the font in your HTML */
+  background-color: #0d1117; 
+  color: #ffffff;
   line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Header */
+/* Header styles - fixed position and better contrast */
 header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 50;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #161b22; /* Slightly lighter dark background */
+  background-color: rgba(22, 27, 34, 0.95); /* Semi-transparent background */
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid #30363d;
+  transition: all 0.3s ease;
 }
 
 header a {
@@ -277,4 +286,89 @@ footer a {
 
 footer a:hover {
   color: #d8b4fe;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero .buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .hero .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .features .cards {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  
+  header .logo {
+    margin-bottom: 0.5rem;
+  }
+  
+  header nav {
+    order: 3;
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  header .buttons {
+    order: 2;
+  }
+  
+  .hero {
+    padding: 8rem 1rem 4rem 1rem; /* Extra top padding to account for stacked header */
+  }
+  
+  .hero h1 {
+    font-size: 2.30rem;
+  }
+  
+  .features .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .hero .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero .buttons a {
+    width: 100%;
+  }
 }

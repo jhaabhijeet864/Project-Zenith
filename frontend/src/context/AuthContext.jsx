@@ -4,8 +4,8 @@ import {
   signInWithEmailAndPassword, 
   signOut, 
   onAuthStateChanged 
-} from 'firebase/auth'; // Import directly from firebase/auth
-import { auth } from '../config/firebase'; // Just import the auth instance
+} from 'firebase/auth';
+import { auth } from '../config/firebase';
 
 const AuthContext = createContext();
 
