@@ -1,6 +1,20 @@
-o# Project Zenith - Frontend
+<!-- Centered project title -->
+<h1 align="center">Project Zenith</h1>
 
-![Project Zenith](https://via.placeholder.com/1200x300?text=Project+Zenith+Landing+Page)
+<!-- Centered subtitle/description -->
+<p align="center">
+  <b>AI Powered Startup Success Predictor for Founders and Investors</b>
+</p>
+
+<!-- Centered badges -->
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
+  </a>
+  <a href="https://github.com/jhaabhijeet864/Project-Zenith/tree/master">
+    <img src="https://img.shields.io/badge/Branch-Master-blue" alt="Frontend Branch">
+  </a>
+</p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Frontend Branch](https://img.shields.io/badge/Branch-Master-blue)](https://github.com/jhaabhijeet864/Project-Zenith/tree/master)
