@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith - Startup Success Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">ZENITH</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li class="nav-item"><a href="#demo" class="nav-link">Demo</a></li>
+                <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            </ul>
+            <div class="nav-cta">
+                <button class="nav-btn">Get Started</button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="hero-section" id="home">
+        <div class="container">
+            <header class="hero-header">
+                <h1 class="animated-title">
+                    <span class="glitch-text" data-text="ZENITH">ZENITH</span>
+                </h1>
+                <p class="tagline">The Future of Startup Success Prediction</p>
+            </header>
+            
+            <div class="hero-content">
+                <h2 class="subtitle">Predict. Analyze. Succeed.</h2>
+                <p class="description">
+                    Harness the power of AI to predict your startup's potential. 
+                    Zenith analyzes market trends, team dynamics, and financial patterns 
+                    to give you the competitive edge you need.
+                </p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Market Analysis</h3>
+                        <p>Deep insights into market opportunities and competitive landscapes</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Success Scoring</h3>
+                        <p>Proprietary algorithm that scores your startup's probability of success</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">📊</div>
+                        <h3>Real-time Insights</h3>
+                        <p>Live dashboard with actionable recommendations and trend analysis</p>
+                    </div>
+                </div>
+                
+                <div class="cta-section">
+                    <button class="cta-button">Start Your Prediction</button>
+                    <p class="cta-subtext">Join 500+ startups already using Zenith</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="background-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+        </div>
+    </main>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How Zenith Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Data Input</h3>
+                        <p>Upload your business plan, financial data, and team information through our secure platform.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>AI Analysis</h3>
+                        <p>Our advanced algorithms analyze 1000+ data points including market trends and competitor performance.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Success Score</h3>
+                        <p>Receive a comprehensive success prediction score with detailed insights and recommendations.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Optimization</h3>
+                        <p>Get actionable strategies to improve your startup's chances of success and growth trajectory.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Risk Assessment</h3>
+                        <p>Identify potential risks and challenges that could impact your startup's growth and receive mitigation strategies.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>Continuous Monitoring</h3>
+                        <p>Track your progress with real-time updates and alerts as market conditions and your startup metrics evolve.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Predictor Demo Section -->
+    <section class="predictor-demo" id="demo">
+        <div class="container">
+            <h2 class="section-title">Live Success Predictor</h2>
+            <div class="predictor-content">
+                <div class="predictor-left">
+                    <h3 class="demo-title">Sample Startup Analysis</h3>
+                    <div class="startup-details">
+                        <div class="detail-item">
+                            <span class="label">Industry:</span>
+                            <span class="value">FinTech</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Team Size:</span>
+                            <span class="value">12 Members</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Funding Stage:</span>
+                            <span class="value">Series A</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Market Size:</span>
+                            <span class="value">$45B</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="predictor-center">
+                    <div class="success-meter">
+                        <div class="meter-container">
+                            <div class="meter-circle">
+                                <div class="meter-fill"></div>
+                                <div class="meter-center">
+                                    <span class="success-score">87%</span>
+                                    <span class="success-label">Success Rate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analysis-status">
+                            <div class="status-indicator"></div>
+                            <span>Analysis Complete</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="predictor-right">
+                    <h3 class="insights-title">Key Insights</h3>
+                    <div class="insight-bars">
+                        <div class="insight-item">
+                            <span class="insight-label">Market Opportunity</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill market" data-progress="92"></div>
+                            </div>
+                            <span class="insight-value">92%</span>
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-label">Team Strength</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill team" data-progress="78"></div>
+                            </div>
+                            <span class="insight-value">78%</span>
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-label">Financial Health</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill financial" data-progress="85"></div>
+                            </div>
+                            <span class="insight-value">85%</span>
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-label">Innovation Score</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill innovation" data-progress="94"></div>
+                            </div>
+                            <span class="insight-value">94%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics" id="statistics">
+        <div class="container">
+            <h2 class="section-title">Proven Results</h2>
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number animated-counter" data-target="95">0%</div>
+                    <div class="stat-label">Accuracy Rate</div>
+                    <div class="stat-icon">🎯</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number animated-counter" data-target="500">0+</div>
+                    <div class="stat-label">Startups Analyzed</div>
+                    <div class="stat-icon">🚀</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number animated-counter" data-target="2.5">$0B</div>
+                    <div class="stat-label">Total Funding Raised</div>
+                    <div class="stat-icon">💰</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number animated-counter" data-target="24">0hrs</div>
+                    <div class="stat-label">Average Analysis Time</div>
+                    <div class="stat-icon">⚡</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number animated-counter" data-target="150">0+</div>
+                    <div class="stat-label">Data Points Analyzed</div>
+                    <div class="stat-icon">📊</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number animated-counter" data-target="98">0%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                    <div class="stat-icon">⭐</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number animated-counter" data-target="45">0+</div>
+                    <div class="stat-label">Countries Served</div>
+                    <div class="stat-icon">🌍</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number animated-counter" data-target="127">0M</div>
+                    <div class="stat-label">Jobs Created</div>
+                    <div class="stat-icon">👥</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Founders Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="quote">"Zenith's predictions helped us identify critical market gaps before our competitors. We raised $5M in Series A."</div>
+                    <div class="author">
+                        <strong>Sarah Chen</strong>
+                        <span>CEO, TechFlow</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"The insights were incredibly accurate. Zenith predicted our user growth within 2% of actual results."</div>
+                    <div class="author">
+                        <strong>Marcus Rodriguez</strong>
+                        <span>Founder, DataSync</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"Thanks to Zenith's recommendations, we pivoted our strategy and increased our success score by 40%."</div>
+                    <div class="author">
+                        <strong>Emily Watson</strong>
+                        <span>Co-founder, GreenTech Solutions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Choose Your Plan</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Starter</h3>
+                    <div class="price">$99<span>/analysis</span></div>
+                    <ul class="features-list">
+                        <li>Basic success prediction</li>
+                        <li>Market analysis report</li>
+                        <li>Email support</li>
+                        <li>1 revision included</li>
+                    </ul>
+                    <button class="price-btn">Get Started</button>
+                </div>
+                <div class="price-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Professional</h3>
+                    <div class="price">$299<span>/analysis</span></div>
+                    <ul class="features-list">
+                        <li>Advanced AI predictions</li>
+                        <li>Detailed competitor analysis</li>
+                        <li>Priority support</li>
+                        <li>Unlimited revisions</li>
+                        <li>Strategy recommendations</li>
+                    </ul>
+                    <button class="price-btn">Choose Plan</button>
+                </div>
+                <div class="price-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <ul class="features-list">
+                        <li>Custom AI model training</li>
+                        <li>Real-time monitoring</li>
+                        <li>Dedicated account manager</li>
+                        <li>API access</li>
+                        <li>White-label solution</li>
+                    </ul>
+                    <button class="price-btn">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How accurate are Zenith's predictions?</h3>
+                    <p>Our AI model has a 95% accuracy rate based on historical data from over 10,000 startups across various industries.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What data do I need to provide?</h3>
+                    <p>We analyze your business plan, financial projections, team composition, market research, and competitive landscape data.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does the analysis take?</h3>
+                    <p>Most analyses are completed within 24 hours, with complex enterprise evaluations taking up to 72 hours.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my data secure?</h3>
+                    <p>Absolutely. We use enterprise-grade encryption and comply with SOC 2 Type II standards to protect your sensitive information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>ZENITH</h3>
+                        <p>Predicting startup success with AI precision</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">API Documentation</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Zenith Technologies. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Animations -->
+    <script src="animations.js"></script>
+</body>
+</html>
